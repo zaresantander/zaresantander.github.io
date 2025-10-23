@@ -2,24 +2,46 @@ html{
     background-color: rgb(147, 122, 230);
 }
 
-*{
-    border: solid 1px white
-}
+*
+
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-flow: column;
+    gap: 2rem;
     padding-top: 5rem;
+    min-height: 80vh;
 }
 
+li a{
+    margin-block: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(91, 42, 198);
+    padding-inline: 1rem;
+    padding-block: 0.7rem;
+    border-radius: 5px;
+    border: solid 1px rgb(132, 95, 211);
+    transition: all 0.3s ease-in-out;
+}
+
+li a:hover{
+    background-color: rgb(147, 121, 204);
+    transform: scale(1.1) rotateZ(2deg)
+
+}
+
+ul{
+    list-style: none;
+}
 .título h1{
     color: aliceblue;
-    font-family: "Micro 5", sans-serif;
-    font-size: 8rem;
+    font-family: "Righteous", sans-serif;
+    font-size: 4rem;
 }
 
 .nav a{
-    color: black;
+    color: rgb(250, 250, 250);
 }
